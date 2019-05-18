@@ -1,0 +1,17 @@
+== System installation ==
+
+This library is header only. So you can either copy `include/*.hpp` to `/usr/include` or `/usr/local/include`, or add `include` to your search path.
+
+== Building the examples and tests ==
+
+It is preferable to build out of source. Make a build directory somewhere, and then
+do the following, where `${DIR}` is the path that you checked out `meshgen`
+to:
+
+  cmake ${DIR}
+  make
+
+To run the tests, you have to configure `meshgen` with another flag:
+   cmake -D BUILD_TESTS=ON ${DIR}
+   make
+   make test
