@@ -6,3 +6,4 @@ googletest-build/
 googletest-download/
 googletest-src/
 meshgrid_test
+*~
